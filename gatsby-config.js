@@ -1,20 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: "Soundsfromtheweb",
+    title: 'Soundsfromtheweb',
+    siteUrl: 'https://needstobetheproductionurl.com',
   },
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
   ],
 };
