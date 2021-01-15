@@ -109,7 +109,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
-      <p style={paragraphStyles}>Have a lot of fun and more!</p>
+      <p style={paragraphStyles}>Version: 15 jan 2021, 13:06</p>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a
