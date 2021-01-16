@@ -109,7 +109,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
-      <p style={paragraphStyles}>Version: 15 jan 2021, 13:06</p>
+      <p style={paragraphStyles}>Version: sat 16 jan 2021, 11:29</p>
     </main>
   );
 };
