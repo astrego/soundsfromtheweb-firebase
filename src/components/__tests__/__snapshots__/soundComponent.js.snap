@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testComponent renders correctly 1`] = `
+<div>
+  <h1>
+    Sound Component
+  </h1>
+  <audio
+    controls={true}
+  >
+    <source
+      src="test-file-stub"
+      type="audio/mpeg"
+    />
+    Your browser does not support the audio element.
+  </audio>
+  <br />
+  <br />
+  <div>
+    <a
+      download={true}
+      href="/static/dfe0312a9e62d182bd5c2a320ae37016/testopname.WAV"
+      style={
+        Object {
+          "backgroundColor": "blue",
+          "borderRadius": 5,
+          "color": "white",
+          "padding": 12,
+          "textDecoration": "none",
+        }
+      }
+    >
+      Download the high quality WAV
+    </a>
+  </div>
+</div>
+`;
