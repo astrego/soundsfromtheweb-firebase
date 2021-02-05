@@ -24,6 +24,11 @@ jobs:
           echo FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }} >> .env
           echo FIREBASE_TOKEN_URI: ${{ secrets.FIREBASE_TOKEN_URI }} >> .env
           cat .env
+          rm .gitignore
+          git config user.email "EMAIL"
+          git config user.name "USERNAME"
+          git add .
+          git commit -m "environment variables"
           npm ci && npm run test && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
