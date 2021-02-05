@@ -17,7 +17,7 @@ jobs:
       FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }}
       FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
       FIREBASE_AUTH_PROVIDER_X509_CERT_URL: ${{ secrets.FIREBASE_AUTH_PROVIDER_X509_CERT_URL }}
-      FIREBASE_CLIENT_X509_CERT_URL: ${{ FIREBASE_CLIENT_X509_CERT_URL }}
+      FIREBASE_CLIENT_X509_CERT_URL: ${{ secrets.FIREBASE_CLIENT_X509_CERT_URL }}
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run test && npm run build
