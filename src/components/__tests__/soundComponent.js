@@ -30,11 +30,11 @@ describe('button and h1', () => {
     expect(screen.getByText('testopname')).toBeInTheDocument();
   });
 
-  it('expects to start a download', () => {
-    const downloadSound = jest.fn();
-    const { getByText } = render(<SoundComponent />);
+  // it('expects to start a download', () => {
+  //   const downloadSound = jest.fn();
+  //   const { getByText } = render(<SoundComponent />);
 
-    fireEvent.click(getByText('Download the high quality WAV'));
-    expect(downloadSound).toHaveBeenCalled();
-  });
+  //   fireEvent.click(getByText('Download the high quality WAV'));
+  //   expect(downloadSound).toHaveBeenCalled();
+  // });
 });
