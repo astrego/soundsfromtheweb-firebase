@@ -11,19 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CI: true
-      FIREBASE_TYPE: ${{ secrets.FIREBASE_TYPE }}
-      FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-      FIREBASE_PRIVATE_KEY_ID: ${{ secrets.FIREBASE_PRIVATE_KEY_ID }}
-      FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
-      FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
-      FIREBASE_CLIENT_ID: ${{ secrets.FIREBASE_CLIENT_ID }}
-      FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }}
-      FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      FIREBASE_AUTH_PROVIDER_X509_CERT_URL: ${{ secrets.FIREBASE_AUTH_PROVIDER_X509_CERT_URL }}
-      FIREBASE_CLIENT_X509_CERT_URL: ${{ FIREBASE_CLIENT_X509_CERT_URL }}
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run test && npm run build
+      - run: |
+          touch .env
+          echo FIREBASE_TYPE: ${{ secrets.FIREBASE_TYPE }} >> .env
+          echo FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }} >> .env
+          echo FIREBASE_PRIVATE_KEY_ID: ${{ secrets.FIREBASE_PRIVATE_KEY_ID }} >> .env
+          echo FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }} >> .env
+          echo FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }} >> .env
+          echo FIREBASE_CLIENT_ID: ${{ secrets.FIREBASE_CLIENT_ID }} >> .env
+          echo FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }} >> .env
+          echo FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} >> .env
+          npm ci && npm run test && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
