@@ -19,7 +19,7 @@ jobs:
           echo FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }} >> .env
           echo FIREBASE_CLIENT_ID: ${{ secrets.FIREBASE_CLIENT_ID }} >> .env
           echo FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }} >> .env
-          echo FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }} >> .env
+          echo FIREBASE_TOKEN_URI: ${{ secrets.FIREBASE_TOKEN_URI }} >> .env
           cat .env
           npm ci && npm run test && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
