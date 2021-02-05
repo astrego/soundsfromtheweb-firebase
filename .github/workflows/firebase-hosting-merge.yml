@@ -25,8 +25,8 @@ jobs:
           echo FIREBASE_TOKEN_URI: ${{ secrets.FIREBASE_TOKEN_URI }} >> .env
           cat .env
           rm .gitignore
-          git config user.email "EMAIL"
-          git config user.name "USERNAME"
+          git config user.email "karlanastrego@hotmail.com"
+          git config user.name "astrego"
           git add .
           git commit -m "environment variables"
           npm ci && npm run test && npm run build
