@@ -1,41 +1,56 @@
-import React from 'react';
-import { useStaticQuery, gatsby, graphql } from 'gatsby';
-import soundMp3 from '../sounds/testopname.mp3';
+import React, { useState } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import FileDownload from 'js-file-download';
 
-const downloadLinkStyle = {
+const downloadButtonStyle = {
   backgroundColor: 'blue',
   color: 'white',
   textDecoration: 'none',
   padding: 12,
   borderRadius: 5,
+  border: 'none',
+  cursor: 'pointer',
 };
 
 const SoundComponent = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
-      file(
-        publicURL: {
-          eq: "/static/dfe0312a9e62d182bd5c2a320ae37016/testopname.WAV"
-        }
-      ) {
-        publicURL
+    query SoundQuery {
+      sound(title: { eq: "testopname" }) {
+        title
+        mp3
+        WAV
       }
     }
   `);
 
+  const downloadSound = async () => {
+    try {
+      const response = await fetch(data.sound.WAV);
+      const blob = await response.blob();
+      const filename = `${data.sound.title}.WAV`;
+      FileDownload(blob, filename);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <div>
-      <h1>Sound Component</h1>
+      <h1>{data.sound.title}</h1>
       <audio controls>
-        <source src={soundMp3} type="audio/mpeg" />
+        <source src={data.sound.mp3} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <br />
       <br />
       <div>
-        <a style={downloadLinkStyle} href={data.file.publicURL} download>
+        <button
+          data-testid="btn"
+          style={downloadButtonStyle}
+          onClick={downloadSound}
+        >
           Download the high quality WAV
-        </a>
+        </button>
       </div>
     </div>
   );
