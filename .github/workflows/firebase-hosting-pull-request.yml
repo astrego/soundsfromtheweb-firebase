@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          touch .env
+          touch .env.production
           echo FIREBASE_TYPE: ${{ secrets.FIREBASE_TYPE }} >> .env
           echo FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }} >> .env
           echo FIREBASE_PRIVATE_KEY_ID: ${{ secrets.FIREBASE_PRIVATE_KEY_ID }} >> .env
@@ -20,7 +20,7 @@ jobs:
           echo FIREBASE_CLIENT_ID: ${{ secrets.FIREBASE_CLIENT_ID }} >> .env
           echo FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }} >> .env
           echo FIREBASE_TOKEN_URI: ${{ secrets.FIREBASE_TOKEN_URI }} >> .env
-          cat .env
+          cat .env.production
           rm .gitignore
           git config user.email "karlanastrego@hotmail.com"
           git config user.name "astrego"
