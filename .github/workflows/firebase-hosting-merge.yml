@@ -23,6 +23,8 @@ jobs:
           echo FIREBASE_CLIENT_ID: ${{ secrets.FIREBASE_CLIENT_ID }} >> .env
           echo FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }} >> .env
           echo FIREBASE_TOKEN_URI: ${{ secrets.FIREBASE_TOKEN_URI }} >> .env
+          echo FIREBASE_AUTH_PROVIDER_X509_CERT_URL: ${{ secrets.FIREBASE_AUTH_PROVIDER_X509_CERT_URL }} >> .env
+          echo FIREBASE_CLIENT_X509_CERT_URL: ${{ secrets.FIREBASE_CLIENT_X509_CERT_URL }} >> .env
           cat .env.production
           rm .gitignore
           git config user.email "karlanastrego@hotmail.com"

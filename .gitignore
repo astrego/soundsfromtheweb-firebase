@@ -3,3 +3,4 @@ node_modules/
 public
 firebase-geg.json
 .env
+.env.*
