@@ -25,8 +25,8 @@ jobs:
           echo GATSBY_MEASUREMENT_ID: ${{ secrets.GATSBY_MEASUREMENT_ID}} >> .env
           cat .env.development
           rm .gitignore
-          git config user.email "test@testsite.com"
-          git config user.name "test"
+          git config user.email "karlanastrego@hotmail.com"
+          git config user.name "astrego"
           git add .
           git commit -m "environment variables"
           npm ci && npm run test && npm run build
