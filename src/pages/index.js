@@ -34,7 +34,7 @@ const IndexPage = () => {
       </h1>
       <SoundComponent />
       <br />
-      <p style={paragraphStyles}>Version: thu 11 feb 2021, 13:02</p>
+      <p style={paragraphStyles}>Version: thu 11 feb 2021, 15:08</p>
     </main>
   );
 };
