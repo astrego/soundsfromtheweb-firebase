@@ -1,6 +1,5 @@
 node_modules/
 .cache/
 public
-firebase-geg.json
 .env
 .env.*

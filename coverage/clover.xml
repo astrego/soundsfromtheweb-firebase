@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1612519848974" clover="3.2.0">
-  <project timestamp="1612519848974" name="All files">
-    <metrics statements="11" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1" elements="13" coveredelements="6" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1613044055686" clover="3.2.0">
+  <project timestamp="1613044055686" name="All files">
+    <metrics statements="21" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="9" coveredmethods="4" elements="34" coveredelements="17" complexity="0" loc="21" ncloc="21" packages="1" files="2" classes="2"/>
+    <file name="firebase.js" path="/Users/karlanastrego/Documents/development-projects/soundsfromtheweb/src/components/firebase.js">
+      <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="2"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+    </file>
     <file name="soundComponent.js" path="/Users/karlanastrego/Documents/development-projects/soundsfromtheweb/src/components/soundComponent.js">
-      <metrics statements="11" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <metrics statements="15" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="2"/>
       <line num="5" count="1" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="27" count="0" type="stmt"/>
-      <line num="28" count="0" type="stmt"/>
-      <line num="29" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
       <line num="30" count="0" type="stmt"/>
       <line num="31" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
       <line num="33" count="0" type="stmt"/>
-      <line num="37" count="1" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

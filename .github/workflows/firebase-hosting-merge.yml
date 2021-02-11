@@ -13,25 +13,7 @@ jobs:
       CI: true
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          touch .env.production
-          echo FIREBASE_TYPE: ${{ secrets.FIREBASE_TYPE }} >> .env
-          echo FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }} >> .env
-          echo FIREBASE_PRIVATE_KEY_ID: ${{ secrets.FIREBASE_PRIVATE_KEY_ID }} >> .env
-          echo FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }} >> .env
-          echo FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }} >> .env
-          echo FIREBASE_CLIENT_ID: ${{ secrets.FIREBASE_CLIENT_ID }} >> .env
-          echo FIREBASE_AUTH_URI: ${{ secrets.FIREBASE_AUTH_URI }} >> .env
-          echo FIREBASE_TOKEN_URI: ${{ secrets.FIREBASE_TOKEN_URI }} >> .env
-          echo FIREBASE_AUTH_PROVIDER_X509_CERT_URL: ${{ secrets.FIREBASE_AUTH_PROVIDER_X509_CERT_URL }} >> .env
-          echo FIREBASE_CLIENT_X509_CERT_URL: ${{ secrets.FIREBASE_CLIENT_X509_CERT_URL }} >> .env
-          cat .env.production
-          rm .gitignore
-          git config user.email "karlanastrego@hotmail.com"
-          git config user.name "astrego"
-          git add .
-          git commit -m "environment variables"
-          npm ci && npm run test && npm run build
+      - run: npm ci && npm run test && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'

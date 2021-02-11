@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for soundComponent.js</title>
+    <title>Code coverage report for firebase.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> soundComponent.js</h1>
+        <h1><a href="index.html">All files</a> firebase.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.67% </span>
+                <span class="strong">66.67% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/15</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/5</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.67% </span>
+                <span class="strong">66.67% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/15</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -127,41 +127,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -179,6 +161,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -189,72 +172,89 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState, useEffect } from 'react';
-import firebase from './firebase';
-import FileDownload from 'js-file-download';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 &nbsp;
-const downloadButtonStyle = {
-  backgroundColor: 'blue',
-  color: 'white',
-  textDecoration: 'none',
-  padding: 12,
-  borderRadius: 5,
-  border: 'none',
-  cursor: 'pointer',
-};
-&nbsp;
-const SoundComponent = () =&gt; {
-  const [data, setData] = useState(null);
-&nbsp;
-  useEffect(() =&gt; {
-    firebase.database
-      .collection('sounds')
-      .get()
-      .then(<span class="fstat-no" title="function not covered" >(s</span>napshot) =&gt; {
-<span class="cstat-no" title="statement not covered" >        snapshot.forEach(<span class="fstat-no" title="function not covered" >(d</span>oc) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >          setData(doc.data());</span>
+export default new Proxy(
+  {
+    get database() {
+      return firebase.firestore();
+    },
+<span class="fstat-no" title="function not covered" >    ge</span>t auth() {
+<span class="cstat-no" title="statement not covered" >      return firebase.auth();</span>
+    },
+    providers: {
+<span class="fstat-no" title="function not covered" >      ge</span>t google() {
+<span class="cstat-no" title="statement not covered" >        return new firebase.auth.GoogleAuthProvider();</span>
+      },
+    },
+  },
+  {
+    get: function (target, name) {
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (!firebase.apps.length) {
+        firebase.initializeApp({
+          apiKey: process.env.GATSBY_API_KEY,
+          authDomain: process.env.GATSBY_AUTH_DOMAIN,
+          projectId: process.env.GATSBY_PROJECT_ID,
+          storageBucket: process.env.GATSBY_STORAGE_BUCKET,
+          messagingSenderId: process.env.GATSBY_MESSAGING_SENDER_ID,
+          appId: process.env.GATSBY_APP_ID,
+          // apiKey: 'AIzaSyBRR3qAYJ5vPimEvMHGd92GvtLO4wRkH6Y',
+          // authDomain: 'soundsfromtheweb.firebaseapp.com',
+          // projectId: 'soundsfromtheweb',
+          // storageBucket: 'soundsfromtheweb.appspot.com',
+          // messagingSenderId: '782788461532',
+          // appId: '1:782788461532:web:cd13c98ee5b8ec61144519',
+          // measurementId: 'G-198TXLY3YE',
         });
-      });
-  }, []);
+      }
 &nbsp;
-  const downloadSound = <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const response = <span class="cstat-no" title="statement not covered" >await fetch(data.WAV);</span>
-      const blob = <span class="cstat-no" title="statement not covered" >await response.blob();</span>
-      const filename = <span class="cstat-no" title="statement not covered" >`${data.title}.WAV`;</span>
-<span class="cstat-no" title="statement not covered" >      FileDownload(blob, filename);</span>
-    } catch (e) {
-<span class="cstat-no" title="statement not covered" >      console.log(e);</span>
-    }
-  };
+      return target[name];
+    },
+  }
+);
 &nbsp;
-  return (
-    &lt;div&gt;
-      {data &amp;&amp; (
-<span class="branch-1 cbranch-no" title="branch not covered" >        &lt;div&gt;</span>
-          &lt;h1&gt;{data.title}&lt;/h1&gt;
-          &lt;audio controls&gt;
-            &lt;source src={data.mp3} type="audio/mpeg" /&gt;
-            Your browser does not support the audio element.
-          &lt;/audio&gt;
-          &lt;br /&gt;
-          &lt;br /&gt;
-          &lt;div&gt;
-            &lt;button
-              data-testid="btn"
-              style={downloadButtonStyle}
-              onClick={downloadSound}
-            &gt;
-              Download the high quality WAV
-            &lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      )}
-    &lt;/div&gt;
-  );
-};
+// const firebaseConfig = {
+// apiKey: 'AIzaSyBRR3qAYJ5vPimEvMHGd92GvtLO4wRkH6Y',
+// authDomain: 'soundsfromtheweb.firebaseapp.com',
+// projectId: 'soundsfromtheweb',
+// storageBucket: 'soundsfromtheweb.appspot.com',
+// messagingSenderId: '782788461532',
+// appId: '1:782788461532:web:cd13c98ee5b8ec61144519',
+// measurementId: 'G-198TXLY3YE',
+//   apiKey: process.env.GATSBY_API_KEY,
+//   authDomain: process.env.GATSBY_AUTH_DOMAIN,
+//   projectId: process.env.GATSBY_PROJECT_ID,
+//   storageBucket: process.env.GATSBY_STORAGE_BUCKET,
+//   messagingSenderId: process.env.GATSBY_MESSAGING_SENDER_ID,
+//   appId: process.env.GATSBY_APP_ID,
+//   measurementId: process.env.GATSBY_MEASUREMENT_ID,
+// };
 &nbsp;
-export default SoundComponent;
+// console.log(process.env);
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+// // firebase.analytics();
+&nbsp;
+// export default firebase;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
